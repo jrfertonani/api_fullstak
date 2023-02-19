@@ -8,13 +8,13 @@
 Onde são gerados uma imagen virtual no Docker e cadastrados num servidor virtual MySql.
 Ambos estam cadastrando e retornando um JSON. 
 
-### Para adicionar tanto no cadastro de Backend e de Frontend precisara adicionar:
+### Para adicionar um conteudo de teste no front ou no back é só adicionar no insomnia :
 
  DEVELOPER:
 <table>
   <tr>
     <td>
-      nivel: | nome: | sexo: | datanascimento: | idade: | hobby: 
+      nome: | nivel:  | sexo: | datanascimento: | idade: | hobby: 
     </td>
   </tr> 
 </table>
