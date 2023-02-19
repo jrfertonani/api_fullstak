@@ -1,0 +1,93 @@
+<div >
+  
+  Cadastro Desenvolvedor
+  
+  
+  <div class="ui-g-12">
+
+    <div >
+      <h1>Cadastro Desenvolvedor</h1>
+    </div>
+
+    <form [formGroup]="formDeveloper" (ngSubmit)="salvar()">
+
+      <div >
+
+        <div class="form-group">
+          <label class="form-control-label">Nome:</label>
+          <input class="form-control" type="text" name="inputNome" formControlName="inputNome" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label">Nivel</label>
+          <input  class="form-control" type="text" name ="inputNivel" formControlName="inputNivel" required email>
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label">sexo</label>
+          <input class="form-control" type="text" name="inputSexo" formControlName="inputSexo" required >
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label">Data de Nascimento</label>
+          <input class="form-control" type="date" name="inputNascimento" formControlName="inputNascimento" required >
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label">Idade</label>
+          <input class="form-control" type="text" name="inputIdade" formControlName="inputIdade" required >
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label">Hobby</label>
+          <input class="form-control" type="text" name="inputHobby" formControlName="inputHobby" required >
+        </div>
+
+      </div>
+
+      <div >
+        <button type="submit" class="btn btn-primary btn-lg" (ngSubmit)="salvar()">Criar</button>
+        <button type="button" class="btn btn-primary btn-lg" routerLink="/login">Cancelar</button>
+      </div>
+    </form>
+
+  </div>
+  
+<hr>
+
+<p>Desenvolvedores Cadastrados</p>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Level</th>
+        <th scope="col">Sexo</th>
+        <th scope="col">Data de Nascimento</th>
+        <th scope="col">Idade</th>
+        <th scope="col">Hobby</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
